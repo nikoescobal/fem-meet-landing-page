@@ -1,7 +1,8 @@
 @use './breakpoints'as *;
 @use './colors'as *;
+@use './buttons'as *;
 
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -54,10 +55,11 @@ footer, header, nav, section, main{
 
 body {
   background: mistyrose;
+  color: $gray;
   line-height: 1;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
   font-weight: 500;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 26px;
   overflow-x: hidden;
 }
