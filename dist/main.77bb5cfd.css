@@ -45,7 +45,6 @@ input {
 }
 
 body {
-  background: mistyrose;
   color: #87879D;
   line-height: 1;
   font-family: "Red Hat Display", sans-serif;
@@ -55,23 +54,20 @@ body {
   overflow-x: hidden;
 }
 
-header {
-  display: flex;
-  align-items: center;
-}
 header nav #logo {
-  display: flex;
-  padding: 4rem 0 3.375rem;
-  justify-content: center;
+  padding: 3rem 0 0 0;
+  text-align: center;
 }
 header nav .images-container {
   display: flex;
   overflow: hidden;
   width: 100%;
+  padding: 3.375rem 0 3rem 0;
 }
 header nav .images-container div:nth-child(1) {
   object-fit: cover;
   margin: 0 0 0 -1.313rem;
+  padding: 0;
 }
 header nav .images-container div:nth-child(1) img {
   width: 12.438rem;
@@ -79,10 +75,59 @@ header nav .images-container div:nth-child(1) img {
 header nav .images-container div:nth-child(2) {
   object-fit: cover;
   margin: 0 -2.313rem 0 0;
+  padding: 0;
 }
 header nav .images-container div:nth-child(2) img {
   width: 12.438rem;
   margin: 0 0 0 1rem;
+}
+header nav div {
+  padding: 0 1.5rem;
+}
+header nav div h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 2.75rem;
+  text-align: center;
+  color: #28283D;
+  padding: 0 1.5rem;
+}
+header nav div p {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  text-align: center;
+  color: #87879D;
+  padding: 1.5rem 0 2rem 0;
+}
+header nav .btn-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+header nav .btn-container button {
+  padding: 0.9375rem 0 0.875rem;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 29px;
+  border: transparent;
+  margin: 0 0 1rem;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 900;
+  letter-spacing: -0.18px;
+}
+header nav .btn-container button:nth-child(1) {
+  width: 12.063rem;
+  color: #FAFAFA;
+  background: #4D96A9;
+}
+header nav .btn-container button:nth-child(2) {
+  width: 8.688rem;
+  color: #FAFAFA;
+  background: #855FB1;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

@@ -54,7 +54,7 @@ input {
 // }
 
 body {
-  background: mistyrose;
+  // background: mistyrose;
   color: $gray;
   line-height: 1;
   font-family: 'Red Hat Display', sans-serif;
@@ -65,28 +65,22 @@ body {
 }
 
 header {
-  display: flex;
-  align-items: center;
-  // justify-content: center;
-
   nav {
     #logo {
-      display: flex;
-      padding: 4rem 0 3.375rem;
-      justify-content: center;
+      padding: 3rem 0 0 0;
+      text-align: center;
     } 
 
     .images-container {
       display: flex;
-      // justify-content: space-between;
       overflow: hidden;
       width: 100%;
+      padding: 3.375rem 0 3rem 0;
 
-
-      
       div:nth-child(1) {
         object-fit: cover;
         margin: 0 0 0 -1.313rem;
+        padding: 0;
 
         img {
           width: 12.438rem;
@@ -96,11 +90,58 @@ header {
       div:nth-child(2) {
         object-fit: cover;
         margin: 0 -2.313rem 0 0;
+        padding: 0;
 
         img {
           width: 12.438rem;
           margin: 0 0 0 1rem;
         }
+      }
+    }
+
+    div {
+      padding: 0 1.5rem;
+
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 900;
+        line-height: 2.75rem;
+        text-align: center;
+        color: $dark-blue;
+        padding: 0 1.5rem;
+      }
+      
+      p {
+        font-size: 1rem;
+        line-height: 1.625rem;
+        text-align: center;
+        color: $gray;
+        padding: 1.5rem 0 2rem 0;
+      }
+    }
+
+   
+
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+
+      button {
+        @include btn-style();
+      }
+
+      button:nth-child(1) {
+        width: 12.063rem;
+        color: $white;
+        background: $teal;
+      }
+
+      button:nth-child(2) {
+        width: 8.688rem;
+        color: $white;
+        background: $dark-purple;
       }
     }
   }
