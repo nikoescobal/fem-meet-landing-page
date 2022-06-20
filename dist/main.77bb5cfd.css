@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -44,18 +44,45 @@ input {
   border-radius: 0;
 }
 
-footer, header, nav, section, main {
-  display: block;
-}
-
 body {
   background: mistyrose;
+  color: #87879D;
   line-height: 1;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
   overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+header nav #logo {
+  display: flex;
+  padding: 4rem 0 3.375rem;
+  justify-content: center;
+}
+header nav .images-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+header nav .images-container div:nth-child(1) {
+  object-fit: cover;
+  margin: 0 0 0 -1.313rem;
+}
+header nav .images-container div:nth-child(1) img {
+  width: 12.438rem;
+}
+header nav .images-container div:nth-child(2) {
+  object-fit: cover;
+  margin: 0 -2.313rem 0 0;
+}
+header nav .images-container div:nth-child(2) img {
+  width: 12.438rem;
+  margin: 0 0 0 1rem;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

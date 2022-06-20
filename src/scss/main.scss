@@ -49,9 +49,9 @@ input {
   border-radius: 0;
 }
 
-footer, header, nav, section, main{
-  display: block;
-}
+// footer, header, nav, section, main{
+//   display: block;
+// }
 
 body {
   background: mistyrose;
@@ -59,7 +59,49 @@ body {
   line-height: 1;
   font-family: 'Red Hat Display', sans-serif;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
   overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+
+  nav {
+    #logo {
+      display: flex;
+      padding: 4rem 0 3.375rem;
+      justify-content: center;
+    } 
+
+    .images-container {
+      display: flex;
+      // justify-content: space-between;
+      overflow: hidden;
+      width: 100%;
+
+
+      
+      div:nth-child(1) {
+        object-fit: cover;
+        margin: 0 0 0 -1.313rem;
+
+        img {
+          width: 12.438rem;
+        }
+      }
+
+      div:nth-child(2) {
+        object-fit: cover;
+        margin: 0 -2.313rem 0 0;
+
+        img {
+          width: 12.438rem;
+          margin: 0 0 0 1rem;
+        }
+      }
+    }
+  }
 }
