@@ -122,7 +122,7 @@ header {
 
    
 
-    .btn-container {
+    .cta-container {
       display: flex;
       flex-direction: column;
       text-align: center;
@@ -142,6 +142,7 @@ header {
         width: 8.688rem;
         color: $white;
         background: $dark-purple;
+        margin: 0 0 4rem 0;
       }
     }
   }
