@@ -73,13 +73,14 @@ header {
 
     .images-container {
       display: flex;
+      justify-content: space-between;
       overflow: hidden;
       width: 100%;
       padding: 3.375rem 0 3rem 0;
 
       div:nth-child(1) {
         object-fit: cover;
-        margin: 0 0 0 -1.313rem;
+        margin: 0 0 0 -1.213rem;
         padding: 0;
 
         img {
@@ -94,7 +95,7 @@ header {
 
         img {
           width: 12.438rem;
-          margin: 0 0 0 1rem;
+          margin: 0 1.2rem 0 0;
         }
       }
     }
@@ -119,8 +120,6 @@ header {
         padding: 1.5rem 0 2rem 0;
       }
     }
-
-   
 
     .cta-container {
       display: flex;
