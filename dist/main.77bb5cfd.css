@@ -140,23 +140,23 @@ header nav .cta-container .section-marker {
   padding: 0 0 4rem 0;
 }
 header nav .cta-container .section-marker .line {
-  width: 1px;
   height: 5.25rem;
-  color: #87879D;
-  opacity: 0.25;
-  mix-blend-mode: normal;
 }
 header nav .cta-container .section-marker .line hr {
   height: 5.25rem;
-  border: solid 1px #87879D;
+  border: none;
+  background: #87879D;
+  width: 1px;
+  opacity: 0.25;
+  mix-blend-mode: normal;
 }
 header nav .cta-container .section-marker .circle {
   padding: 15px 19px;
   border-radius: 29px;
-  border: 1.75px solid rgba(135, 135, 157, 0.25);
+  border: 1px solid rgba(135, 135, 157, 0.25);
   mix-blend-mode: normal;
   opacity: 1.25;
-  margin: 0.5rem 0 0 0;
+  margin: 0.56rem 0 0 0;
   font-weight: 900;
   font-size: 1rem;
   line-height: 1.625rem;
