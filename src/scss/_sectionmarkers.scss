@@ -1,0 +1,33 @@
+@use "./colors" as *;
+
+@mixin section-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 4rem 0;
+
+  .line {
+    height: 5.25rem;
+
+    hr {
+      height: 5.25rem;
+      border: none;
+      background: $gray;
+      width: 1px;
+      opacity: 0.25;
+      mix-blend-mode: normal;
+    }
+  }
+  .circle {
+    padding: 15px 19px;
+    border-radius: 29px;
+    border: 1px solid rgba(135, 135, 157, 0.25);
+    mix-blend-mode: normal;
+    opacity: 1.25;
+    margin: 0.56rem 0 0 0;
+    font-weight: 900;
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+}
