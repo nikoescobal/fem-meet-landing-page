@@ -287,7 +287,9 @@ main #section-marker-2 .circle {
 }
 
 footer {
-  background: url("/image-footer.b654a21e.jpg");
+  background: linear-gradient(to top, rgba(77, 150, 169, 0.9), rgba(77, 150, 169, 0.9)), url("/image-footer.b654a21e.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 footer #footer-text {
   display: flex;
@@ -295,21 +297,20 @@ footer #footer-text {
   align-items: center;
   text-align: center;
   padding: 0 1.5rem;
+  color: #FAFAFA;
+  padding: 5.75rem 1.5rem 0;
 }
 footer #footer-text p:nth-child(1) {
-  color: #FAFAFA;
-  font-size: 2.25rem;
-  line-height: 1.625rem;
+  font-size: 2rem;
+  line-height: 2.25rem;
   font-weight: 900;
-  letter-spacing: 0.25rem;
-  text-transform: uppercase;
   text-align: center;
 }
 footer #footer-text p:nth-child(2) {
-  color: #28283D;
   font-size: 1.125rem;
   line-height: 1.625rem;
   font-weight: 500;
+  text-align: center;
   padding: 1.5rem 0 2rem;
 }
 footer #footer-text button {
@@ -325,12 +326,10 @@ footer #footer-text button {
   line-height: 26px;
   font-weight: 900;
   letter-spacing: -0.18px;
-}
-footer #footer-text button button:nth-child(2) {
   width: 8.688rem;
   color: #FAFAFA;
   background: #855FB1;
-  margin: 0 0 4rem 0;
+  margin: 0 0 4.5rem;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

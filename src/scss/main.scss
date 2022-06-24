@@ -295,37 +295,41 @@ main {
 }
 
 footer {
-  background: url("../assets/mobile/image-footer.jpg");
+  background: linear-gradient(
+      to top,
+      rgba(77, 150, 169, 0.9),
+      rgba(77, 150, 169, 0.9)
+    ),
+    url("../assets/mobile/image-footer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
   #footer-text {
     @include card-text;
+    color: $white;
+    padding: 5.75rem 1.5rem 0;
 
     p:nth-child(1) {
-      color: $white;
-      font-size: 2.25rem;
-      line-height: 1.625rem;
+      font-size: 2rem;
+      line-height: 2.25rem;
       font-weight: 900;
-      letter-spacing: 0.25rem;
-      text-transform: uppercase;
       text-align: center;
     }
 
     p:nth-child(2) {
-      color: $dark-blue;
       font-size: 1.125rem;
       line-height: 1.625rem;
       font-weight: 500;
+      text-align: center;
       padding: 1.5rem 0 2rem;
     }
 
     button {
       @include btn-style;
-
-      button:nth-child(2) {
-        width: 8.688rem;
-        color: $white;
-        background: $dark-purple;
-        margin: 0 0 4rem 0;
-      }
+      width: 8.688rem;
+      color: $white;
+      background: $dark-purple;
+      margin: 0 0 4.5rem;
     }
   }
 }
