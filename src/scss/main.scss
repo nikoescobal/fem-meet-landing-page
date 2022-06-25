@@ -357,6 +357,8 @@ main {
   }
   #section-marker-2 {
     @include section-marker;
+    margin: 0 0 -5.75rem 0;
+    z-index: 10;
   }
 }
 
