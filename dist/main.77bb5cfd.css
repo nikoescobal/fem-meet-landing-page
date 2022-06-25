@@ -126,7 +126,8 @@ header nav .image-container {
 }
 @media (min-width: 768px) {
   header nav .image-container {
-    width: 100%;
+    width: 106.5%;
+    margin: 0 0 0 -1.56rem;
   }
   header nav .image-container img {
     width: 100%;
@@ -148,6 +149,11 @@ header nav div h1 {
   color: #28283D;
   padding: 0 1.5rem;
 }
+@media (min-width: 768px) {
+  header nav div h1 {
+    padding: 0 14rem;
+  }
+}
 header nav div p {
   font-size: 1rem;
   line-height: 1.625rem;
@@ -155,11 +161,23 @@ header nav div p {
   color: #87879D;
   padding: 1.5rem 0 2rem 0;
 }
+@media (min-width: 768px) {
+  header nav div p {
+    padding: 1.5rem 9rem 2rem;
+  }
+}
 header nav .cta-container {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
+}
+@media (min-width: 768px) {
+  header nav .cta-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
 }
 header nav .cta-container button {
   padding: 0.9375rem 0 0.875rem;
@@ -181,6 +199,11 @@ header nav .cta-container button:nth-child(1) {
   color: #FAFAFA;
   background: #4D96A9;
 }
+@media (min-width: 768px) {
+  header nav .cta-container button:nth-child(1) {
+    margin: 0;
+  }
+}
 header nav .cta-container button:nth-child(1) span {
   color: #8FE3F9;
 }
@@ -189,6 +212,11 @@ header nav .cta-container button:nth-child(2) {
   color: #FAFAFA;
   background: #855FB1;
   margin: 0 0 4rem 0;
+}
+@media (min-width: 768px) {
+  header nav .cta-container button:nth-child(2) {
+    margin: 0;
+  }
 }
 header nav #section-marker-1 {
   display: flex;
@@ -220,6 +248,11 @@ header nav #section-marker-1 .circle {
   line-height: 1.625rem;
   width: 3.5rem;
   height: 3.5rem;
+}
+@media (min-width: 768px) {
+  header nav #section-marker-1 {
+    padding: 5rem 0 4rem 0;
+  }
 }
 
 main {
