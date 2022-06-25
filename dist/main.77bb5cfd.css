@@ -266,13 +266,33 @@ main .flex-container {
   gap: 1rem;
   padding: 1.5rem;
 }
+@media (min-width: 768px) {
+  main .flex-container {
+    flex-direction: row;
+    padding: 1.5rem 2.5rem 2.25rem 2.438rem;
+  }
+}
 main .flex-container .card {
   display: flex;
   gap: 1.563rem;
 }
+@media (min-width: 768px) {
+  main .flex-container .card {
+    gap: 0.688rem;
+  }
+}
 main .flex-container .card img {
   width: 100%;
+  height: 8.938rem;
+  max-height: 100%;
   border-radius: 0.5rem;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  main .flex-container .card img {
+    height: 9.75rem;
+    max-height: 100%;
+  }
 }
 main #image-text {
   display: flex;
@@ -296,12 +316,24 @@ main #image-text p:nth-child(2) {
   font-weight: 900;
   padding: 1.5rem 0 2rem;
 }
+@media (min-width: 768px) {
+  main #image-text p:nth-child(2) {
+    font-size: 2.5rem;
+    line-height: 2.25rem;
+    padding: 1.25rem 9rem 2rem;
+  }
+}
 main #image-text p:nth-child(3) {
   color: #87879D;
   font-size: 1rem;
   line-height: 1.625rem;
   font-weight: 500;
   padding: 0 0 4rem;
+}
+@media (min-width: 768px) {
+  main #image-text p:nth-child(3) {
+    padding: 0 4rem 5rem;
+  }
 }
 main #section-marker-2 {
   display: flex;

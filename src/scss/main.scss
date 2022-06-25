@@ -269,13 +269,30 @@ main {
     gap: 1rem;
     padding: 1.5rem;
 
+    @include md {
+      flex-direction: row;
+      padding: 1.5rem 2.5rem 2.25rem 2.438rem;
+    }
+
     .card {
       display: flex;
       gap: 1.563rem;
 
+      @include md {
+        gap: 0.688rem;
+      }
+
       img {
         width: 100%;
+        height: 8.938rem;
+        max-height: 100%;
         border-radius: 0.5rem;
+        object-fit: cover;
+
+        @include md {
+          height: 9.75rem;
+          max-height: 100%;
+        }
       }
     }
 
@@ -318,6 +335,12 @@ main {
       line-height: 2.25rem;
       font-weight: 900;
       padding: 1.5rem 0 2rem;
+
+      @include md {
+        font-size: 2.5rem;
+        line-height: 2.25rem;
+        padding: 1.25rem 9rem 2rem;
+      }
     }
 
     p:nth-child(3) {
@@ -326,6 +349,10 @@ main {
       line-height: 1.625rem;
       font-weight: 500;
       padding: 0 0 4rem;
+
+      @include md {
+        padding: 0 4rem 5rem;
+      }
     }
   }
   #section-marker-2 {
