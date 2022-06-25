@@ -20,7 +20,7 @@
     }
   }
   .circle {
-    padding: 15px 19px;
+    padding: 15px 17.5px;
     border-radius: 29px;
     border: 1px solid rgba(135, 135, 157, 0.25);
     mix-blend-mode: normal;
@@ -29,5 +29,7 @@
     font-weight: 900;
     font-size: 1rem;
     line-height: 1.625rem;
+    width: 3.5rem;
+    height: 3.5rem;
   }
 }
