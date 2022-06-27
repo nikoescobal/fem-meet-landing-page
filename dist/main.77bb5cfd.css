@@ -516,12 +516,14 @@ main #section-marker-2 .circle {
   background: #fafafa;
 }
 
-footer {
+footer #footer-container {
   background: linear-gradient(to top, rgba(77, 150, 169, 0.9), rgba(77, 150, 169, 0.9)), url("/image-footer.b654a21e.jpg");
   background-size: cover;
+  background-position: 40% 20%;
   background-repeat: no-repeat;
+  width: 100%;
 }
-footer #footer-text {
+footer #footer-container #footer-text {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -531,43 +533,43 @@ footer #footer-text {
   padding: 5.75rem 1.5rem 0;
 }
 @media (min-width: 1200px) {
-  footer #footer-text {
+  footer #footer-container #footer-text {
     flex-direction: row;
     padding: 5rem 8rem 4rem;
     justify-content: space-between;
   }
 }
 @media (min-width: 1440px) {
-  footer #footer-text {
+  footer #footer-container #footer-text {
     padding: 7.25rem 10.313rem 6.5rem;
   }
 }
-footer #footer-text p:nth-child(1) {
+footer #footer-container #footer-text p:nth-child(1) {
   font-size: 2rem;
   line-height: 2.25rem;
   font-weight: 900;
   text-align: center;
 }
 @media (min-width: 768px) {
-  footer #footer-text p:nth-child(1) {
+  footer #footer-container #footer-text p:nth-child(1) {
     font-size: 2.5rem;
     line-height: 2.75rem;
     padding: 0 6.5rem;
   }
 }
 @media (min-width: 1200px) {
-  footer #footer-text p:nth-child(1) {
+  footer #footer-container #footer-text p:nth-child(1) {
     text-align: left;
     width: 22rem;
     padding: 0;
   }
 }
 @media (min-width: 1440px) {
-  footer #footer-text p:nth-child(1) {
+  footer #footer-container #footer-text p:nth-child(1) {
     width: 24rem;
   }
 }
-footer #footer-text p:nth-child(2) {
+footer #footer-container #footer-text p:nth-child(2) {
   font-size: 1.125rem;
   line-height: 1.625rem;
   font-weight: 500;
@@ -575,12 +577,12 @@ footer #footer-text p:nth-child(2) {
   padding: 1.5rem 0 2rem;
 }
 @media (min-width: 768px) {
-  footer #footer-text p:nth-child(2) {
+  footer #footer-container #footer-text p:nth-child(2) {
     padding: 2rem 4rem 2.5rem;
   }
 }
 @media (min-width: 1200px) {
-  footer #footer-text p:nth-child(2) {
+  footer #footer-container #footer-text p:nth-child(2) {
     text-align: left;
     width: 22rem;
     padding: 0 2rem 0 0;
@@ -588,13 +590,13 @@ footer #footer-text p:nth-child(2) {
   }
 }
 @media (min-width: 1440px) {
-  footer #footer-text p:nth-child(2) {
+  footer #footer-container #footer-text p:nth-child(2) {
     width: 24rem;
     padding: 0 2.5rem 0 0;
     margin: 0 -1rem 0 0;
   }
 }
-footer #footer-text button {
+footer #footer-container #footer-text button {
   padding: 0.9375rem 0 0.875rem;
   vertical-align: middle;
   align-items: center;
@@ -614,15 +616,15 @@ footer #footer-text button {
   background: #855fb1;
   margin: 0 0 4.5rem;
 }
-footer #footer-text button:hover {
+footer #footer-container #footer-text button:hover {
   background-color: #b18bdd;
 }
 @media (min-width: 1200px) {
-  footer #footer-text button {
+  footer #footer-container #footer-text button {
     margin: 0;
   }
 }
-footer #footer-text button span {
+footer #footer-container #footer-text button span {
   color: #d9b8ff;
 }
 
