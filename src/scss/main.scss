@@ -427,6 +427,10 @@ main {
       @include xl {
         padding: 0 28.9rem 5rem;
       }
+
+      @include breakpoint(1700px) {
+        padding: 0 36rem 5rem;
+      }
     }
   }
   #section-marker-2 {
