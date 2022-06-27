@@ -238,7 +238,7 @@ header nav #header-container #header-text p {
 }
 @media (min-width: 1440px) {
   header nav #header-container #header-text p {
-    padding: 2.125rem 4.5rem 2rem;
+    padding: 2.125rem 4.5rem 32px;
     line-height: 1.625rem;
     font-size: 1.125rem;
   }
