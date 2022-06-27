@@ -307,6 +307,10 @@ header {
       @include md {
         padding: 5rem 0 4rem 0;
       }
+
+      @include lg {
+        padding: 7.313rem 0 4rem 0;
+      }
     }
   }
 }
@@ -429,7 +433,7 @@ main {
       }
 
       @include xl {
-        padding: 0 27.5rem 5rem;
+        padding: 0 27rem 5rem;
       }
 
       @include breakpoint(1700px) {
