@@ -117,26 +117,24 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/main.js":[function(require,module,exports) {
-// import homeContainer from "./home";
-// import footerContainer from "./footer";
-// import logo from "../assets/logo.svg";
-// const content = document.getElementById("root");
-// content.style.height = "100vh";
-var headerContainer = function headerContainer(content) {
-  var header = document.createElement("header");
-  header.classList.add("");
-  header.innerHTML = "\n    \n\n    ";
-};
+})({"assets/logo.svg":[function(require,module,exports) {
+module.exports = "/logo.b37d81ec.svg";
+},{}],"js/main.js":[function(require,module,exports) {
+"use strict";
 
-var logoContainer = document.createElement("div"); // logoContainer.appendChild;
+var _logo = _interopRequireDefault(require("../assets/logo.svg"));
 
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var content = document.getElementById("root");
 var meetLogo = new Image();
-meetLogo.src = "".concat(logo);
-logoContainer.classList.add("logo-padding"); // content.appendChild(meetLogo);
-// content.appendChild(footerContainer);
-// footerContainer;
-},{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+meetLogo.src = "".concat(_logo.default);
+content.appendChild(meetLogo);
+var img = document.createElement("img");
+img.setAttribute("src", "../assets/logo.svg");
+img.setAttribute("alt", "");
+content.appendChild(img);
+},{"../assets/logo.svg":"assets/logo.svg"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

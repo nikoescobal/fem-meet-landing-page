@@ -1,28 +1,12 @@
-// import homeContainer from "./home";
-// import footerContainer from "./footer";
+import logo from "../assets/logo.svg";
 
-// import logo from "../assets/logo.svg";
+const content = document.getElementById("root");
 
-// const content = document.getElementById("root");
-// content.style.height = "100vh";
-
-const headerContainer = (content) => {
-  const header = document.createElement("header");
-  header.classList.add("");
-  header.innerHTML = `
-    
-
-    `;
-};
-
-const logoContainer = document.createElement("div");
-// logoContainer.appendChild;
-
-let meetLogo = new Image();
+const meetLogo = new Image();
 meetLogo.src = `${logo}`;
-logoContainer.classList.add("logo-padding");
-// content.appendChild(meetLogo);
+content.appendChild(meetLogo);
 
-// content.appendChild(footerContainer);
-
-// footerContainer;
+const img = document.createElement("img");
+img.setAttribute("src", "../assets/logo.svg");
+img.setAttribute("alt", "");
+content.appendChild(img);
