@@ -251,6 +251,10 @@ header {
             color: $white;
             background: $teal;
 
+            &:hover {
+              background-color: $light-teal;
+            }
+
             @include md {
               margin: 0;
             }
@@ -265,6 +269,10 @@ header {
             color: $white;
             background: $dark-purple;
             margin: 0 0 4rem 0;
+
+            &:hover {
+              background-color: $medium-purple;
+            }
 
             @include md {
               margin: 0;
@@ -461,6 +469,10 @@ footer {
       color: $white;
       background: $dark-purple;
       margin: 0 0 4.5rem;
+
+      &:hover {
+        background-color: $medium-purple;
+      }
 
       @include xl {
         margin: 0;
