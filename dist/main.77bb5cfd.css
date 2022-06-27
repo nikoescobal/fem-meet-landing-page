@@ -192,7 +192,7 @@ header nav #header-container #image-hero-left {
 header nav #header-container #image-hero-right {
   margin: 7rem -1.85rem 0 0;
 }
-header nav #header-container #header-text h1 {
+header nav #header-container #header-text h2 {
   font-size: 2.5rem;
   font-weight: 900;
   line-height: 2.75rem;
@@ -201,19 +201,19 @@ header nav #header-container #header-text h1 {
   padding: 0 1.5rem;
 }
 @media (min-width: 768px) {
-  header nav #header-container #header-text h1 {
+  header nav #header-container #header-text h2 {
     padding: 0 14rem;
   }
 }
 @media (min-width: 1200px) {
-  header nav #header-container #header-text h1 {
+  header nav #header-container #header-text h2 {
     padding: 5rem 4rem 0;
     line-height: 3.25rem;
     font-size: 2.75rem;
   }
 }
 @media (min-width: 1440px) {
-  header nav #header-container #header-text h1 {
+  header nav #header-container #header-text h2 {
     padding: 6.75rem 6.3rem 0;
     line-height: 4rem;
     font-size: 4rem;
