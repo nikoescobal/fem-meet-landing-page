@@ -119,6 +119,11 @@ header nav #logo {
   padding: 3rem 0 0 0;
   text-align: center;
 }
+@media (min-width: 1200px) {
+  header nav #logo {
+    padding: 4rem 0 0 0;
+  }
+}
 @media (min-width: 1440px) {
   header nav #logo {
     padding: 5rem 0 0 0;
@@ -129,7 +134,7 @@ header nav #header-container {
   flex-direction: column;
   justify-content: space-between;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   header nav #header-container {
     flex-direction: row;
   }
@@ -146,7 +151,7 @@ header nav #header-container #header-images {
     margin: 0 0 0 -1.56rem;
   }
 }
-@media (min-width: 768px) and (min-width: 1440px) {
+@media (min-width: 768px) and (min-width: 1200px) {
   header nav #header-container #header-images {
     display: none;
   }
@@ -170,7 +175,7 @@ header nav #header-container #image-hero-left,
 header nav #header-container #image-hero-right {
   display: none;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   header nav #header-container #image-hero-left,
 header nav #header-container #image-hero-right {
     display: flex;
@@ -200,6 +205,13 @@ header nav #header-container #header-text h1 {
     padding: 0 14rem;
   }
 }
+@media (min-width: 1200px) {
+  header nav #header-container #header-text h1 {
+    padding: 5rem 4rem 0;
+    line-height: 3.25rem;
+    font-size: 2.75rem;
+  }
+}
 @media (min-width: 1440px) {
   header nav #header-container #header-text h1 {
     padding: 6.75rem 6.3rem 0;
@@ -217,6 +229,11 @@ header nav #header-container #header-text p {
 @media (min-width: 768px) {
   header nav #header-container #header-text p {
     padding: 1.5rem 9rem 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  header nav #header-container #header-text p {
+    padding: 1.8rem 3rem 2.5rem;
   }
 }
 @media (min-width: 1440px) {
@@ -346,14 +363,15 @@ main .flex-container {
 }
 @media (min-width: 1200px) {
   main .flex-container {
+    padding: 0 1.75rem 4rem 2rem;
     justify-content: center;
+    gap: 1.5rem;
   }
 }
 @media (min-width: 1440px) {
   main .flex-container {
     padding: 0 2.5rem 5rem 2.438rem;
     gap: 1.875rem;
-    justify-content: center;
   }
 }
 main .flex-container .card {
@@ -363,6 +381,11 @@ main .flex-container .card {
 @media (min-width: 768px) {
   main .flex-container .card {
     gap: 0.688rem;
+  }
+}
+@media (min-width: 1200px) {
+  main .flex-container .card {
+    gap: 1.5rem;
   }
 }
 @media (min-width: 1440px) {
@@ -380,6 +403,11 @@ main .flex-container .card img {
 @media (min-width: 768px) {
   main .flex-container .card img {
     height: 9.75rem;
+  }
+}
+@media (min-width: 1200px) {
+  main .flex-container .card img {
+    height: 12rem;
   }
 }
 @media (min-width: 1440px) {
@@ -416,6 +444,11 @@ main #image-text p:nth-child(2) {
     padding: 1.25rem 9rem 2rem;
   }
 }
+@media (min-width: 1200px) {
+  main #image-text p:nth-child(2) {
+    padding: 1.25rem 24rem 2rem;
+  }
+}
 @media (min-width: 1440px) {
   main #image-text p:nth-child(2) {
     padding: 1.25rem 30rem 2rem;
@@ -431,6 +464,11 @@ main #image-text p:nth-child(3) {
 @media (min-width: 768px) {
   main #image-text p:nth-child(3) {
     padding: 0 4rem 5rem;
+  }
+}
+@media (min-width: 1200px) {
+  main #image-text p:nth-child(3) {
+    padding: 0 22rem 5rem;
   }
 }
 @media (min-width: 1440px) {
@@ -487,11 +525,16 @@ footer #footer-text {
   color: #fafafa;
   padding: 5.75rem 1.5rem 0;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   footer #footer-text {
     flex-direction: row;
-    padding: 7.25rem 10.313rem 6.5rem;
+    padding: 5rem 8rem 4rem;
     justify-content: space-between;
+  }
+}
+@media (min-width: 1440px) {
+  footer #footer-text {
+    padding: 7.25rem 10.313rem 6.5rem;
   }
 }
 footer #footer-text p:nth-child(1) {
@@ -507,11 +550,16 @@ footer #footer-text p:nth-child(1) {
     padding: 0 6.5rem;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   footer #footer-text p:nth-child(1) {
     text-align: left;
-    width: 24rem;
+    width: 22rem;
     padding: 0;
+  }
+}
+@media (min-width: 1440px) {
+  footer #footer-text p:nth-child(1) {
+    width: 24rem;
   }
 }
 footer #footer-text p:nth-child(2) {
@@ -526,9 +574,16 @@ footer #footer-text p:nth-child(2) {
     padding: 2rem 4rem 2.5rem;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   footer #footer-text p:nth-child(2) {
     text-align: left;
+    width: 22rem;
+    padding: 0 2rem 0 0;
+    margin: 0 -0.5rem 0 0;
+  }
+}
+@media (min-width: 1440px) {
+  footer #footer-text p:nth-child(2) {
     width: 24rem;
     padding: 0 2.5rem 0 0;
     margin: 0 -1rem 0 0;
@@ -557,7 +612,7 @@ footer #footer-text button {
 footer #footer-text button:hover {
   background-color: #b18bdd;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   footer #footer-text button {
     margin: 0;
   }

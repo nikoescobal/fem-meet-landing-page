@@ -127,6 +127,10 @@ header {
       padding: 3rem 0 0 0;
       text-align: center;
 
+      @include lg {
+        padding: 4rem 0 0 0;
+      }
+
       @include xl {
         padding: 5rem 0 0 0;
       }
@@ -137,7 +141,7 @@ header {
       flex-direction: column;
       justify-content: space-between;
 
-      @include xl {
+      @include lg {
         flex-direction: row;
       }
 
@@ -151,7 +155,7 @@ header {
           width: 106.5%;
           margin: 0 0 0 -1.56rem;
 
-          @include xl {
+          @include lg {
             display: none;
           }
 
@@ -175,7 +179,7 @@ header {
       #image-hero-right {
         display: none;
 
-        @include xl {
+        @include lg {
           display: flex;
           padding: 0;
 
@@ -206,6 +210,12 @@ header {
             padding: 0 14rem;
           }
 
+          @include lg {
+            padding: 5rem 4rem 0;
+            line-height: 3.25rem;
+            font-size: 2.75rem;
+          }
+
           @include xl {
             padding: 6.75rem 6.3rem 0;
             line-height: 4rem;
@@ -222,6 +232,10 @@ header {
 
           @include md {
             padding: 1.5rem 9rem 2rem;
+          }
+
+          @include lg {
+            padding: 1.8rem 3rem 2.5rem;
           }
 
           @include xl {
@@ -312,14 +326,15 @@ main {
       padding: 1.5rem 2.5rem 2.25rem 2.438rem;
     }
 
-    @include breakpoint(1200px) {
+    @include lg {
+      padding: 0 1.75rem 4rem 2rem;
       justify-content: center;
+      gap: 1.5rem;
     }
 
     @include xl {
       padding: 0 2.5rem 5rem 2.438rem;
       gap: 1.875rem;
-      justify-content: center;
     }
 
     .card {
@@ -328,6 +343,10 @@ main {
 
       @include md {
         gap: 0.688rem;
+      }
+
+      @include lg {
+        gap: 1.5rem;
       }
 
       @include xl {
@@ -343,6 +362,10 @@ main {
 
         @include md {
           height: 9.75rem;
+        }
+
+        @include lg {
+          height: 12rem;
         }
 
         @include xl {
@@ -377,6 +400,10 @@ main {
         padding: 1.25rem 9rem 2rem;
       }
 
+      @include lg {
+        padding: 1.25rem 24rem 2rem;
+      }
+
       @include xl {
         padding: 1.25rem 30rem 2rem;
       }
@@ -391,6 +418,10 @@ main {
 
       @include md {
         padding: 0 4rem 5rem;
+      }
+
+      @include lg {
+        padding: 0 22rem 5rem;
       }
 
       @include xl {
@@ -419,10 +450,14 @@ footer {
     color: $white;
     padding: 5.75rem 1.5rem 0;
 
-    @include xl {
+    @include lg {
       flex-direction: row;
-      padding: 7.25rem 10.313rem 6.5rem;
+      padding: 5rem 8rem 4rem;
       justify-content: space-between;
+    }
+
+    @include xl {
+      padding: 7.25rem 10.313rem 6.5rem;
     }
 
     p:nth-child(1) {
@@ -437,10 +472,14 @@ footer {
         padding: 0 6.5rem;
       }
 
-      @include xl {
+      @include lg {
         text-align: left;
-        width: 24rem;
+        width: 22rem;
         padding: 0;
+      }
+
+      @include xl {
+        width: 24rem;
       }
     }
 
@@ -455,8 +494,14 @@ footer {
         padding: 2rem 4rem 2.5rem;
       }
 
-      @include xl {
+      @include lg {
         text-align: left;
+        width: 22rem;
+        padding: 0 2rem 0 0;
+        margin: 0 -0.5rem 0 0;
+      }
+
+      @include xl {
         width: 24rem;
         padding: 0 2.5rem 0 0;
         margin: 0 -1rem 0 0;
@@ -474,7 +519,7 @@ footer {
         background-color: $medium-purple;
       }
 
-      @include xl {
+      @include lg {
         margin: 0;
       }
 
