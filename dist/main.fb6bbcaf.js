@@ -126,14 +126,14 @@ var _logo = _interopRequireDefault(require("../assets/logo.svg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var content = document.getElementById('root');
+var content = document.getElementById("root");
 var meetLogo = new Image();
 meetLogo.src = "".concat(_logo.default);
 content.appendChild(meetLogo);
-var img = document.createElement('img');
-img.src = '../assets/logo.svg';
-var img2 = document.createElement('img');
-img2.setAttribute('src', '../assets/logo.svg');
+var img = document.createElement("img");
+img.src = "//assets/logo.svg";
+var img2 = document.createElement("img");
+img2.setAttribute("src", "../assets/logo.svg");
 content.appendChild(img);
 content.appendChild(img2);
 },{"../assets/logo.svg":"assets/logo.svg"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
