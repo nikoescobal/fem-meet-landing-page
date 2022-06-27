@@ -304,6 +304,10 @@ main {
       padding: 1.5rem 2.5rem 2.25rem 2.438rem;
     }
 
+    @include breakpoint(1200px) {
+      justify-content: center;
+    }
+
     @include xl {
       padding: 0 2.5rem 5rem 2.438rem;
       gap: 1.875rem;
