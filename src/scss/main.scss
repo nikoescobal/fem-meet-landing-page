@@ -198,7 +198,7 @@ header {
       }
 
       #header-text {
-        h1 {
+        h2 {
           font-size: 2.5rem;
           font-weight: 900;
           line-height: 2.75rem;
@@ -235,11 +235,11 @@ header {
           }
 
           @include lg {
-            padding: 1.8rem 3rem 2.5rem;
+            padding: 1.8rem 3rem 2rem;
           }
 
           @include xl {
-            padding: 2.125rem 4.5rem 3.5rem;
+            padding: 2.125rem 4.5rem 2rem;
             line-height: 1.625rem;
             font-size: 1.125rem;
           }
@@ -402,6 +402,7 @@ main {
 
       @include lg {
         padding: 1.25rem 24rem 2rem;
+        line-height: 2.75rem;
       }
 
       @include xl {
@@ -422,10 +423,12 @@ main {
 
       @include lg {
         padding: 0 22rem 5rem;
+        font-size: 1.125rem;
+        line-height: 1.625rem;
       }
 
       @include xl {
-        padding: 0 28.9rem 5rem;
+        padding: 0 27.5rem 5rem;
       }
 
       @include breakpoint(1700px) {
