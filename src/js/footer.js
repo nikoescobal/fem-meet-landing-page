@@ -1,15 +1,13 @@
 const footerContainer = (content) => {
-  const footer = document.createElement("footer");
-
+  const footer = document.createElement('footer');
   footer.innerHTML = `
-    <footer>
-      <p>
-      <p> Copyright &copy; 2020-2021.&nbsp </p>
-      <p> Made by Shiver Tech&nbsp</p>
-      <div>
-      <img src="./assets/logo-1.svg" alt="heart image">
-      </div>
-    </footer>
+  <div id="footer-container">
+    <div id="footer-text">
+      <p>Experience more together</p>
+      <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
+      <button>Download<span>&nbsp;v1.3</span></button>
+    </div>
+  </div>
   `;
   content.appendChild(footer);
 };
