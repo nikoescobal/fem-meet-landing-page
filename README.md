@@ -29,9 +29,9 @@
  
 ## What I Learned
 
-- Absolutely positioned elements need to have a parent that is positioned relatively, otherwise it will default to the next closest relative container
-- Tricky layouts can be achieved with the use of margin, padding, flex, and grid
-- grid template columns can be configured with min max and fractionals to enable truly responsive design across all viewport widths
+- How to utilize pure JS instead of HTML to create a static page utilizing DOM methods
+- Importing images is the only way to call them in JS
+- How to apply two overlays using both the background linear gradient and another div with it's own overlay
 
 ## 🤝 Contributing
 
