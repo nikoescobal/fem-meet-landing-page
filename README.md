@@ -1,6 +1,12 @@
 # Meet Landing Page 
 > This project is about building a responsive product landing page using Vanilla JS and CSS. It serves as a good practice of using basic DOM methods to implementing a static SPA.
 
+## Screenshots
+
+![meet-landing-page-mobile-screenshot](https://user-images.githubusercontent.com/62937819/176714745-cf60348c-23b2-43b9-b95b-c9ed758842a6.png)
+![meet-landing-page-md-screenshot](https://user-images.githubusercontent.com/62937819/176714811-76739faa-65e2-45a7-b83c-c2c807b0a8cb.png)
+![meet-landing-page-xl-screenshot](https://user-images.githubusercontent.com/62937819/176714956-db206957-397a-49a7-816d-0697010d46ed.png)
+
 ## Built with
 - HTML
 - Sass
