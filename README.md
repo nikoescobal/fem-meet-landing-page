@@ -1,5 +1,5 @@
 # Meet Landing Page 
-> This project is about building a responsive product landing page using just HTML and CSS. It serves as a good practice for implementing detailed designs with precision.
+> This project is about building a responsive product landing page using Vanilla JS and CSS. It serves as a good practice of using basic DOM methods to implementing a static SPA.
 
 ## Built with
 - HTML
