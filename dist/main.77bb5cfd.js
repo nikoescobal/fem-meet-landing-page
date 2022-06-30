@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../assets/mobile/image-footer.jpg":[["image-footer.b654a21e.jpg","assets/mobile/image-footer.jpg"],"assets/mobile/image-footer.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./../assets/mobile/image-footer.jpg":[["image-footer.b654a21e.jpg","assets/mobile/image-footer.jpg"],"assets/mobile/image-footer.jpg"],"./../assets/tablet/image-footer.jpg":[["image-footer.6704c723.jpg","assets/tablet/image-footer.jpg"],"assets/tablet/image-footer.jpg"],"./../assets/desktop/image-footer.jpg":[["image-footer.7b36653d.jpg","assets/desktop/image-footer.jpg"],"assets/desktop/image-footer.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
