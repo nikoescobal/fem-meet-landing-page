@@ -117,106 +117,26 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"assets/logo.svg":[function(require,module,exports) {
-module.exports = "/logo.b37d81ec.svg";
-},{}],"assets/tablet/image-hero.png":[function(require,module,exports) {
-module.exports = "/image-hero.f3fc1724.png";
-},{}],"assets/desktop/image-hero-left.png":[function(require,module,exports) {
-module.exports = "/image-hero-left.84ac6edc.png";
-},{}],"assets/desktop/image-hero-right.png":[function(require,module,exports) {
-module.exports = "/image-hero-right.86e0eda1.png";
-},{}],"js/header.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _logo = _interopRequireDefault(require("../assets/logo.svg"));
-
-var _imageHero = _interopRequireDefault(require("../assets/tablet/image-hero.png"));
-
-var _imageHeroLeft = _interopRequireDefault(require("../assets/desktop/image-hero-left.png"));
-
-var _imageHeroRight = _interopRequireDefault(require("../assets/desktop/image-hero-right.png"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
+})({"js/main.js":[function(require,module,exports) {
+// import homeContainer from "./home";
+// import footerContainer from "./footer";
+// import logo from "../assets/logo.svg";
+// const content = document.getElementById("root");
+// content.style.height = "100vh";
 var headerContainer = function headerContainer(content) {
-  var header = document.createElement('header');
-  header.innerHTML = "\n      <nav>\n      <div id=\"logo\">\n        <img src=\"".concat(_logo.default, "\" alt=\"logo\">\n      </div>\n      <section id=\"header-container\">\n        <div id=\"header-images\">\n          <img src=\"").concat(_imageHero.default, "\" alt=\"image-hero\">\n        </div>\n        <div id=\"image-hero-left\">\n          <img src=\"").concat(_imageHeroLeft.default, "\" alt=\"image-hero-left\">\n        </div>\n        <div id=\"header-text\">\n          <h2>Group Chat for Everyone</h2>\n          <p>Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>\n          <div class=\"cta-container\">\n            <button>Download <span>&nbsp; v1.3</span></button>\n            <button>What is it?</button>\n          </div>\n        </div>\n        <div id=\"image-hero-right\">\n        <img src=\"").concat(_imageHeroRight.default, "\" alt=\"image-hero-right\">\n        </div>\n      </section>\n      <div id=\"section-marker-1\">\n        <div class=\"line\">\n          <hr>\n        </div>\n        <div class=\"circle\">01</div>\n      </div>\n    </nav>\n    ");
-  content.appendChild(header);
+  var header = document.createElement("header");
+  header.classList.add("");
+  header.innerHTML = "\n    \n\n    ";
 };
 
-var _default = headerContainer;
-exports.default = _default;
-},{"../assets/logo.svg":"assets/logo.svg","../assets/tablet/image-hero.png":"assets/tablet/image-hero.png","../assets/desktop/image-hero-left.png":"assets/desktop/image-hero-left.png","../assets/desktop/image-hero-right.png":"assets/desktop/image-hero-right.png"}],"assets/desktop/image-woman-in-videocall.jpg":[function(require,module,exports) {
-module.exports = "/image-woman-in-videocall.c4d6a481.jpg";
-},{}],"assets/desktop/image-women-videochatting.jpg":[function(require,module,exports) {
-module.exports = "/image-women-videochatting.53ac3a34.jpg";
-},{}],"assets/desktop/image-men-in-meeting.jpg":[function(require,module,exports) {
-module.exports = "/image-men-in-meeting.9834f219.jpg";
-},{}],"assets/desktop/image-man-texting.jpg":[function(require,module,exports) {
-module.exports = "/image-man-texting.538a6108.jpg";
-},{}],"js/body.js":[function(require,module,exports) {
-"use strict";
+var logoContainer = document.createElement("div"); // logoContainer.appendChild;
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _imageWomanInVideocall = _interopRequireDefault(require("../assets/desktop/image-woman-in-videocall.jpg"));
-
-var _imageWomenVideochatting = _interopRequireDefault(require("../assets/desktop/image-women-videochatting.jpg"));
-
-var _imageMenInMeeting = _interopRequireDefault(require("../assets/desktop/image-men-in-meeting.jpg"));
-
-var _imageManTexting = _interopRequireDefault(require("../assets/desktop/image-man-texting.jpg"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var mainContainer = function mainContainer(content) {
-  var main = document.createElement('main');
-  main.innerHTML = "\n  <div class=\"flex-container\">\n  <div class=\"card\">\n    <div>\n      <img src=\"".concat(_imageWomanInVideocall.default, "\" alt=\"image-woman-in-videocall\">\n    </div>\n    <div>\n      <img src=\"").concat(_imageWomenVideochatting.default, "\" alt=\"image-women-videochatting\">\n    </div>\n  </div>\n  <div class=\"card\">\n    <div>\n      <img src=\"").concat(_imageMenInMeeting.default, "\" alt=\"image-men-in-meeting\">\n    </div>\n    <div>\n      <img src=\"").concat(_imageManTexting.default, "\" alt=\"image-man-texting\">\n    </div>\n  </div>\n</div>\n<div id=\"image-text\">\n  <p>Built for modern use</p>\n  <p>Smarter meetings, all in one place</p>\n  <p>Send messages, share files, show your screen, and record your meetings \u2014 all in one workspace. Control who can\n    join with invite-only team access, data encryption, and data export.</p>\n</div>\n<div id=\"section-marker-2\">\n  <div class=\"line\">\n    <hr>\n  </div>\n  <div class=\"circle\">02</div>\n</div>\n    ");
-  content.appendChild(main);
-};
-
-var _default = mainContainer;
-exports.default = _default;
-},{"../assets/desktop/image-woman-in-videocall.jpg":"assets/desktop/image-woman-in-videocall.jpg","../assets/desktop/image-women-videochatting.jpg":"assets/desktop/image-women-videochatting.jpg","../assets/desktop/image-men-in-meeting.jpg":"assets/desktop/image-men-in-meeting.jpg","../assets/desktop/image-man-texting.jpg":"assets/desktop/image-man-texting.jpg"}],"js/footer.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var footerContainer = function footerContainer(content) {
-  var footer = document.createElement('footer');
-  footer.innerHTML = "\n  <div id=\"footer-container\">\n    <div id=\"footer-text\">\n      <p>Experience more together</p>\n      <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>\n      <button>Download<span>&nbsp;v1.3</span></button>\n    </div>\n  </div>\n  ";
-  content.appendChild(footer);
-};
-
-var _default = footerContainer;
-exports.default = _default;
-},{}],"js/main.js":[function(require,module,exports) {
-"use strict";
-
-var _header = _interopRequireDefault(require("./header"));
-
-var _body = _interopRequireDefault(require("./body"));
-
-var _footer = _interopRequireDefault(require("./footer"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var content = document.getElementById("root");
-(0, _header.default)(content);
-(0, _body.default)(content);
-(0, _footer.default)(content);
-},{"./header":"js/header.js","./body":"js/body.js","./footer":"js/footer.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+var meetLogo = new Image();
+meetLogo.src = "".concat(logo);
+logoContainer.classList.add("logo-padding"); // content.appendChild(meetLogo);
+// content.appendChild(footerContainer);
+// footerContainer;
+},{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -244,7 +164,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63283" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60093" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
