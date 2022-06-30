@@ -119,24 +119,91 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"assets/logo.svg":[function(require,module,exports) {
 module.exports = "/logo.b37d81ec.svg";
-},{}],"js/main.js":[function(require,module,exports) {
+},{}],"assets/tablet/image-hero.png":[function(require,module,exports) {
+module.exports = "/image-hero.f3fc1724.png";
+},{}],"assets/desktop/image-woman-in-videocall.jpg":[function(require,module,exports) {
+module.exports = "/image-woman-in-videocall.c4d6a481.jpg";
+},{}],"assets/desktop/image-women-videochatting.jpg":[function(require,module,exports) {
+module.exports = "/image-women-videochatting.53ac3a34.jpg";
+},{}],"assets/desktop/image-men-in-meeting.jpg":[function(require,module,exports) {
+module.exports = "/image-men-in-meeting.9834f219.jpg";
+},{}],"assets/desktop/image-man-texting.jpg":[function(require,module,exports) {
+module.exports = "/image-man-texting.538a6108.jpg";
+},{}],"assets/mobile/image-footer.jpg":[function(require,module,exports) {
+module.exports = "/image-footer.b654a21e.jpg";
+},{}],"js/header.js":[function(require,module,exports) {
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
 var _logo = _interopRequireDefault(require("../assets/logo.svg"));
+
+var _imageHero = _interopRequireDefault(require("../assets/tablet/image-hero.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var content = document.getElementById("root");
 var meetLogo = new Image();
-meetLogo.src = "".concat(_logo.default);
-content.appendChild(meetLogo);
-var img = document.createElement("img");
-img.src = "//assets/logo.svg";
-var img2 = document.createElement("img");
-img2.setAttribute("src", "../assets/logo.svg");
-content.appendChild(img);
-content.appendChild(img2);
-},{"../assets/logo.svg":"assets/logo.svg"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+meetLogo.src = "".concat(_logo.default); // content.appendChild(meetLogo);
+
+var header = new Image();
+header.src = "".concat(_imageHero.default); // content.appendChild(header);
+
+var headerContainer = function headerContainer(content) {
+  var header = document.createElement("header");
+  header.innerHTML = "\n      <nav>\n      <div id=\"logo\">\n        <img src=\"".concat(_logo.default, "\" alt=\"logo\">\n      </div>\n      <section id=\"header-container\">\n        <div id=\"header-images\">\n          <img src=\"").concat(_imageHero.default, "\" alt=\"image-hero\">\n        </div>\n        <div id=\"image-hero-left\">\n          <img src=\"./assets/desktop/image-hero-left.png\" alt=\"image-hero-left\">\n        </div>\n        <div id=\"header-text\">\n          <h2>Group Chat for Everyone</h2>\n          <p>Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>\n          <div class=\"cta-container\">\n            <button>Download <span>&nbsp; v1.3</span></button>\n            <button>What is it?</button>\n          </div>\n        </div>\n        <div id=\"image-hero-right\">\n          <img src=\"./assets/desktop/image-hero-right.png\" alt=\"image-hero-right\">\n        </div>\n      </section>\n      <div id=\"section-marker-1\">\n        <div class=\"line\">\n          <hr>\n        </div>\n        <div class=\"circle\">01</div>\n      </div>\n    </nav>\n    ");
+  content.appendChild(header);
+};
+
+var _default = headerContainer;
+exports.default = _default;
+},{"../assets/logo.svg":"assets/logo.svg","../assets/tablet/image-hero.png":"assets/tablet/image-hero.png"}],"js/main.js":[function(require,module,exports) {
+"use strict";
+
+var _logo = _interopRequireDefault(require("../assets/logo.svg"));
+
+var _imageHero = _interopRequireDefault(require("../assets/tablet/image-hero.png"));
+
+var _imageWomanInVideocall = _interopRequireDefault(require("../assets/desktop/image-woman-in-videocall.jpg"));
+
+var _imageWomenVideochatting = _interopRequireDefault(require("../assets/desktop/image-women-videochatting.jpg"));
+
+var _imageMenInMeeting = _interopRequireDefault(require("../assets/desktop/image-men-in-meeting.jpg"));
+
+var _imageManTexting = _interopRequireDefault(require("../assets/desktop/image-man-texting.jpg"));
+
+var _imageFooter = _interopRequireDefault(require("../assets/mobile/image-footer.jpg"));
+
+var _header = _interopRequireDefault(require("./header"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var content = document.getElementById("root");
+(0, _header.default)(content);
+var meetLogo = new Image();
+meetLogo.src = "".concat(_logo.default); // content.appendChild(meetLogo);
+
+var header = new Image();
+header.src = "".concat(_imageHero.default); // content.appendChild(header);
+
+var img1 = new Image();
+img1.src = "".concat(_imageWomanInVideocall.default); // content.appendChild(img1);
+
+var img2 = new Image();
+img2.src = "".concat(_imageWomenVideochatting.default); // content.appendChild(img2);
+
+var img3 = new Image();
+img3.src = "".concat(_imageMenInMeeting.default); // content.appendChild(img3);
+
+var img4 = new Image();
+img4.src = "".concat(_imageManTexting.default); // content.appendChild(img4);
+
+var footer = new Image();
+footer.src = "".concat(_imageFooter.default); // content.appendChild(footer);
+},{"../assets/logo.svg":"assets/logo.svg","../assets/tablet/image-hero.png":"assets/tablet/image-hero.png","../assets/desktop/image-woman-in-videocall.jpg":"assets/desktop/image-woman-in-videocall.jpg","../assets/desktop/image-women-videochatting.jpg":"assets/desktop/image-women-videochatting.jpg","../assets/desktop/image-men-in-meeting.jpg":"assets/desktop/image-men-in-meeting.jpg","../assets/desktop/image-man-texting.jpg":"assets/desktop/image-man-texting.jpg","../assets/mobile/image-footer.jpg":"assets/mobile/image-footer.jpg","./header":"js/header.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -164,7 +231,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60093" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60247" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
