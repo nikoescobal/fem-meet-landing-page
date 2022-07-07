@@ -564,32 +564,32 @@ footer #footer-container #footer-text {
     padding: 7.25rem 10.313rem 6.5rem;
   }
 }
-footer #footer-container #footer-text p:nth-child(1) {
+footer #footer-container #footer-text p:nth-child(2) {
   font-size: 2rem;
   line-height: 2.25rem;
   font-weight: 900;
   text-align: center;
 }
 @media (min-width: 768px) {
-  footer #footer-container #footer-text p:nth-child(1) {
+  footer #footer-container #footer-text p:nth-child(2) {
     font-size: 2.5rem;
     line-height: 2.75rem;
     padding: 0 6.5rem;
   }
 }
 @media (min-width: 1200px) {
-  footer #footer-container #footer-text p:nth-child(1) {
+  footer #footer-container #footer-text p:nth-child(2) {
     text-align: left;
     width: 22rem;
     padding: 0;
   }
 }
 @media (min-width: 1440px) {
-  footer #footer-container #footer-text p:nth-child(1) {
+  footer #footer-container #footer-text p:nth-child(2) {
     width: 24rem;
   }
 }
-footer #footer-container #footer-text p:nth-child(2) {
+footer #footer-container #footer-text p:nth-child(3) {
   font-size: 1.125rem;
   line-height: 1.625rem;
   font-weight: 500;
@@ -597,12 +597,12 @@ footer #footer-container #footer-text p:nth-child(2) {
   padding: 1.5rem 0 2rem;
 }
 @media (min-width: 768px) {
-  footer #footer-container #footer-text p:nth-child(2) {
+  footer #footer-container #footer-text p:nth-child(3) {
     padding: 2rem 4rem 2.5rem;
   }
 }
 @media (min-width: 1200px) {
-  footer #footer-container #footer-text p:nth-child(2) {
+  footer #footer-container #footer-text p:nth-child(3) {
     text-align: left;
     width: 22rem;
     padding: 0 2rem 0 0;
@@ -610,7 +610,7 @@ footer #footer-container #footer-text p:nth-child(2) {
   }
 }
 @media (min-width: 1440px) {
-  footer #footer-container #footer-text p:nth-child(2) {
+  footer #footer-container #footer-text p:nth-child(3) {
     width: 24rem;
     padding: 0 2.5rem 0 0;
     margin: 0 -1rem 0 0;

@@ -195,7 +195,7 @@ exports.default = void 0;
 
 var footerContainer = function footerContainer(content) {
   var footer = document.createElement('footer');
-  footer.innerHTML = "\n  <div id=\"footer-container\">\n    <div id=\"footer-text\">\n      <p>Experience more together</p>\n      <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>\n      <button>Download<span>&nbsp;v1.3</span></button>\n    </div>\n  </div>\n  ";
+  footer.innerHTML = "\n   <div id=\"footer-container\">\n      <div id=\"footer-text\">\n        <div class=\"color-overlay\"></div>\n        <p>Experience more together</p>\n        <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>\n        <button>Download<span>&nbsp;v1.3</span></button>\n      </div>\n    </div>\n  ";
   content.appendChild(footer);
 };
 
@@ -244,7 +244,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63283" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51894" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

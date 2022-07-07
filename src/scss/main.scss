@@ -1,10 +1,10 @@
-@use "./breakpoints" as *;
-@use "./colors" as *;
-@use "./buttons" as *;
-@use "./sectionmarkers" as *;
-@use "./cards" as *;
+@use './breakpoints' as *;
+@use './colors' as *;
+@use './buttons' as *;
+@use './sectionmarkers' as *;
+@use './cards' as *;
 
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
 *,
 *:before,
@@ -94,7 +94,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -112,7 +112,7 @@ body {
   background: $white;
   color: $gray;
   line-height: 1;
-  font-family: "Red Hat Display", sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 1.625rem;
@@ -455,7 +455,7 @@ footer {
         rgba(77, 150, 169, 0.8),
         rgba(77, 150, 169, 0.8)
       ),
-      url("../assets/mobile/image-footer.jpg");
+      url('../assets/mobile/image-footer.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -465,7 +465,7 @@ footer {
           rgba(77, 150, 169, 0.8),
           rgba(77, 150, 169, 0.8)
         ),
-        url("../assets/tablet/image-footer.jpg");
+        url('../assets/tablet/image-footer.jpg');
     }
 
     @include lg {
@@ -474,7 +474,7 @@ footer {
           rgba(77, 150, 169, 0.8),
           rgba(77, 150, 169, 0.8)
         ),
-        url("../assets/desktop/image-footer.jpg");
+        url('../assets/desktop/image-footer.jpg');
       background-repeat: round;
     }
 
@@ -493,7 +493,7 @@ footer {
         padding: 7.25rem 10.313rem 6.5rem;
       }
 
-      p:nth-child(1) {
+      p:nth-child(2) {
         font-size: 2rem;
         line-height: 2.25rem;
         font-weight: 900;
@@ -516,7 +516,7 @@ footer {
         }
       }
 
-      p:nth-child(2) {
+      p:nth-child(3) {
         font-size: 1.125rem;
         line-height: 1.625rem;
         font-weight: 500;
