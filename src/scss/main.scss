@@ -466,6 +466,8 @@ footer {
           rgba(77, 150, 169, 0.8)
         ),
         url('../assets/tablet/image-footer.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
     }
 
     @include lg {
@@ -475,7 +477,8 @@ footer {
           rgba(77, 150, 169, 0.8)
         ),
         url('../assets/desktop/image-footer.jpg');
-      background-repeat: round;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
 
     #footer-text {

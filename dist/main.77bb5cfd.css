@@ -535,12 +535,15 @@ footer #footer-container {
 @media (min-width: 768px) {
   footer #footer-container {
     background: linear-gradient(to top, rgba(77, 150, 169, 0.8), rgba(77, 150, 169, 0.8)), url("/image-footer.6704c723.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 @media (min-width: 1200px) {
   footer #footer-container {
     background: linear-gradient(to top, rgba(77, 150, 169, 0.8), rgba(77, 150, 169, 0.8)), url("/image-footer.7b36653d.jpg");
-    background-repeat: round;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 footer #footer-container #footer-text {
